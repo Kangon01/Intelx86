@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "*.asm": "masm-intel-x86-16",
+        "*.ASM": "masm-intel-x86-16",
+        "*.bib": "masm-intel-x86-16"
+    },
+    "masmtasm.ASM.assembler": "MASM-v6.11",
+    "masmtasm.ASM.emulator": "dosbox-x"
+}

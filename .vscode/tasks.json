@@ -1,0 +1,55 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build & Run ASM (DOSBox-X)",
+            "type": "shell",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "clear": true
+            },
+            "problemMatcher": [],
+            "windows": {
+                "command": "C:\\Program Files\\DOSBox-X\\dosbox-x.exe",
+                "args": [
+                    "-conf", "${workspaceFolder}\\dosbox-x.conf",
+                    "-c", "mount D \"${workspaceFolder}\"",
+                    "-c", "mount C \"${env:APPDATA}\\Code\\User\\globalStorage\\xsro.masm-tasm\\MASM-v6.11\"",
+                    "-c", "PATH=C:\\MASM;%PATH%",
+                    "-c", "D:",
+                    "-c", "cd \\src",
+                    "-c", "BUILD ${fileBasenameNoExtension}"
+                ]
+            },
+            "osx": {
+                "command": "/Applications/dosbox-x.app/Contents/MacOS/dosbox-x",
+                "args": [
+                    "-conf", "${workspaceFolder}/dosbox-x.conf",
+                    "-c", "mount D \"${workspaceFolder}\"",
+                    "-c", "mount C \"${env:HOME}/Library/Application Support/Code/User/globalStorage/xsro.masm-tasm/MASM-v6.11\"",
+                    "-c", "PATH=C:\\MASM;%PATH%",
+                    "-c", "D:",
+                    "-c", "cd \\src",
+                    "-c", "BUILD ${fileBasenameNoExtension}"
+                ]
+            },
+            "linux": {
+                "command": "dosbox-x",
+                "args": [
+                    "-conf", "${workspaceFolder}/dosbox-x.conf",
+                    "-c", "mount D \"${workspaceFolder}\"",
+                    "-c", "mount C \"${env:HOME}/.config/Code/User/globalStorage/xsro.masm-tasm/MASM-v6.11\"",
+                    "-c", "PATH=C:\\MASM;%PATH%",
+                    "-c", "D:",
+                    "-c", "cd \\src",
+                    "-c", "BUILD ${fileBasenameNoExtension}"
+                ]
+            }
+        }
+    ]
+}

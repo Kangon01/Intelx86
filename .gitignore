@@ -1,0 +1,33 @@
+# Build-Output (wird beim Build neu erzeugt)
+obj/*.OBJ
+obj/*.LST
+obj/*.CRF
+obj/*.MAP
+obj/*.SBR
+exe/*.EXE
+*.OBJ
+*.EXE
+*.LST
+*.MAP
+*.CRF
+*.SBR
+
+# Obsoleter manueller MASM-Ordner (Extension bringt MASM-Tools mit)
+masm/
+
+# Editor-Backups
+*.swp
+*.bak
+*~
+
+# Persoenliche VS Code Settings
+.vscode/settings.local.json
+.vscode/*.log
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Claude
+.claude/

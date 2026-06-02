@@ -20,7 +20,6 @@
                     "-conf", "${workspaceFolder}\\dosbox-x.conf",
                     "-c", "mount D \"${workspaceFolder}\"",
                     "-c", "mount C \"${env:APPDATA}\\Code\\User\\globalStorage\\xsro.masm-tasm\\MASM-v6.11\"",
-                    "-c", "PATH=C:\\MASM;%PATH%",
                     "-c", "D:",
                     "-c", "cd \\src",
                     "-c", "BUILD ${fileBasenameNoExtension}"
@@ -32,7 +31,6 @@
                     "-conf", "${workspaceFolder}/dosbox-x.conf",
                     "-c", "mount D \"${workspaceFolder}\"",
                     "-c", "mount C \"${env:HOME}/Library/Application Support/Code/User/globalStorage/xsro.masm-tasm/MASM-v6.11\"",
-                    "-c", "PATH=C:\\MASM;%PATH%",
                     "-c", "D:",
                     "-c", "cd \\src",
                     "-c", "BUILD ${fileBasenameNoExtension}"
@@ -44,7 +42,6 @@
                     "-conf", "${workspaceFolder}/dosbox-x.conf",
                     "-c", "mount D \"${workspaceFolder}\"",
                     "-c", "mount C \"${env:HOME}/.config/Code/User/globalStorage/xsro.masm-tasm/MASM-v6.11\"",
-                    "-c", "PATH=C:\\MASM;%PATH%",
                     "-c", "D:",
                     "-c", "cd \\src",
                     "-c", "BUILD ${fileBasenameNoExtension}"
